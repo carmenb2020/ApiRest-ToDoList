@@ -29,7 +29,7 @@ onBeforeMount(() =>
 		<section class="status-selector">
 			<StatusSelector :id="task.id" :status="task.status" @response="(data) => currentStatus = data"/>
 		</section>
-		<section class="task-info">
+		<section class="task-info scrollbar">
 			<h3 v-if="currentStatus" class="done">{{ task.title }}</h3>
 			<h3 v-else>{{ task.title }}</h3>
 			<p v-if="task.description">{{ task.description }}</p>
@@ -63,6 +63,7 @@ onBeforeMount(() =>
 		width: 60%;
     	height: 70%;
     	overflow-y: scroll;
+		overscroll-behavior: none;
 	}
 
 	.status-selector
@@ -74,6 +75,32 @@ onBeforeMount(() =>
 	.done
 	{
 		text-decoration: line-through;
+	}
+
+		/* total width */
+	.scrollbar::-webkit-scrollbar 
+	{
+	    width: 6px;
+	}
+
+	/* background of the scrollbar except button or resizer */
+	.scrollbar::-webkit-scrollbar-track 
+	{
+	    background-color: transparent; 
+	}
+
+	/* scrollbar itself */
+	.scrollbar::-webkit-scrollbar-thumb 
+	{
+	    background-color: rgba(186, 186, 192, 0.5); 
+	    border-radius: 16px;
+	    border: 5px solid transparent; 
+	}
+
+	/* Set button (top and bottom of the scrollbar) */
+	.scrollbar::-webkit-scrollbar-button 
+	{
+	    display: none;
 	}
 
 </style>
