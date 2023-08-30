@@ -129,7 +129,7 @@ const submit = async () => {
   color: var(--vt-c-white);
   margin: 0;
   text-align: center;
-  font-size:1.2rem;
+  font-size:1.5rem;
 }
 
 h3 {
@@ -150,7 +150,7 @@ input {
   padding: 0.5rem;
   color: #ffffff;
   font-size: 1.2rem;
-  width: 45vmin;
+  width: 40vmin;
 }
 
 input:focus {
@@ -196,7 +196,7 @@ input:focus {
 
 .calendar {
   margin-top: 1rem;
-  margin-bottom: 20px;
+  margin-bottom: 0.5rem;
 }
 
 p {
@@ -237,7 +237,7 @@ p {
     display:flex;
     flex-direction: column;
     align-items: flex-start;
-    gap:3rem;
+    gap:2rem;
     margin-left: 1rem;
   }
 }

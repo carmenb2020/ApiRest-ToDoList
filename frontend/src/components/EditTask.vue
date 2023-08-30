@@ -131,7 +131,7 @@ const deleteTask = async () => {
   color: var(--vt-c-white);
   margin: 0;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 h3 {
@@ -152,7 +152,7 @@ input {
   padding: 0.5rem;
   color: #ffffff;
   font-size: 1.2rem;
-  width: 45vmin;
+  width: 40vmin;
 }
 
 input:focus {
@@ -232,16 +232,16 @@ p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 3rem;
+    gap: 2rem;
     margin-left: 1rem;
   }
 }
 
 button {
-  border-radius: 10px;
+  border-radius: 1rem;
   border: 0.1rem solid #cacaca;
   padding: 0.5rem;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 500;
 }
 
