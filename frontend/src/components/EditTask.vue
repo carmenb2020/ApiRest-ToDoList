@@ -107,7 +107,6 @@ const deleteTask = async () => {
         <button>Current priority: {{ currentPriority }}</button>
       </div>
     </div>
-
     <div>
       <DeleteButton @click="deleteTask()" />
     </div>
@@ -245,7 +244,4 @@ button {
   font-weight: 500;
 }
 
-#close-button {
-  padding-top: 5rem;
-}
 </style>

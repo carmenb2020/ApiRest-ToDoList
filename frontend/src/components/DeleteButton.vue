@@ -16,7 +16,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 20vh auto;
+        margin: 10vh auto;
         font-weight: 700;
         font-size: 1rem;
     }

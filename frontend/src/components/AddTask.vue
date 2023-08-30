@@ -16,6 +16,7 @@ const props = defineProps({
 const id = ref()
 const router = useRouter();
 
+const date = new Date;
 const newTask = ref({
   id: null,
   title: '',
