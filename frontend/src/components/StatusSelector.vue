@@ -1,5 +1,4 @@
 <script setup>
-import { onBeforeMount, ref } from "vue";
 import GetTasks from "../services/ApiConnection"
 
 	const	props = defineProps (
