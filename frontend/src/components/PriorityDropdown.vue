@@ -14,6 +14,8 @@ onUpdated(() => {
     <div class="dropdown">
         <select v-model="priority"
           class="select-dropdown">
+
+          <option value="" selected disabled>Select priority</option>
           
           <option value="normal">Normal</option>
           
